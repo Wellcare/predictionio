@@ -41,6 +41,8 @@ version in ThisBuild := "0.15.0-SNAPSHOT"
 
 organization in ThisBuild := "org.apache.predictionio"
 
+resolvers += "Typesafe Server" at "https://repo.typesafe.com/typesafe/releases"
+
 scalaVersion in ThisBuild := sys.props.getOrElse("scala.version", "2.11.12")
 
 scalaBinaryVersion in ThisBuild := binaryVersion(scalaVersion.value)
